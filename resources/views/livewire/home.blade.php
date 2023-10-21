@@ -1,4 +1,4 @@
-<div>
+<div x-data="{}">
     <div class="bg-white">
         <header class="absolute inset-x-0 top-0 z-50">
           <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -17,13 +17,12 @@
               </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Leistungen</a>
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Unternehmen</a>
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">News</a>
+              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Kontakt</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
           </nav>
           <!-- Mobile menu, show/hide based on menu open state. -->
@@ -46,13 +45,12 @@
               <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                   <div class="space-y-2 py-6">
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Leistungen</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Unternehmen</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">News</a>
+                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</a>
                   </div>
                   <div class="py-6">
-                    <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
                   </div>
                 </div>
               </div>
@@ -64,18 +62,16 @@
           <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
             <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
           </div>
-          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          <div class="mx-auto max-w-2xl py-12 sm:py-28 lg:py-40">
+            <div class="text-center">
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Effiziente Automationslösungen für die Zukunft!</h1>
+              <p class="mt-6 text-lg leading-8 text-gray-600">Unser Unternehmen steht für Innovation und Fortschritt. Mit jahrelanger Erfahrung und einem engagierten Team bieten wir maßgeschneiderte Lösungen für Ihre Automatisierungsbedürfnisse.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
               </div>
             </div>
-            <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
-              <div class="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+            <div class="hidden sm:mt-8 sm:flex sm:justify-center">
+              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                Entdecken Sie die Dienstleistungen selbst. <a href="#" @click="$refs.firstSection.scrollIntoView({ behavior: 'smooth' })" class="font-semibold text-blue-600"><span class="absolute inset-0" aria-hidden="true"></span>Mehr lesen <span aria-hidden="true">&rarr;</span></a>
               </div>
             </div>
           </div>
@@ -84,6 +80,41 @@
           </div>
         </div>
       </div>
+      <!-- SECTION 2 --> 
+      <div x-ref="firstSection" class="bg-white sm:pb-32 pb-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl class="flex items-center justify-between">
+              <div class="flex flex-col">
+                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div class="flex flex-col">
+                    <img src="images/planning.svg" alt="" class="object-cover h-48">
+                    <span class="text-center text-2xl sm:mt-10">Planung</span>
+                  </div>
+                </dt>
+              </div>
+              <div class="flex flex-col">
+                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div class="flex flex-col">
+                    <img src="images/programming.svg" alt="" class="object-cover h-48">
+                    <span class="text-center text-2xl sm:mt-10">Programmierung</span>
+                  </div>
+                </dt>
+              </div>
+              <div class="flex flex-col">
+                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                  <div class="flex flex-col">
+                    <img src="images/electric.svg" alt="" class="object-cover h-48">
+                    <span class="text-center text-2xl sm:mt-10">Schaltschrankbau</span>
+                  </div>
+                </dt>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    <!-- END SECTION2 -->
+
       <!-- SECTION 1 --> 
       <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div class="absolute inset-0 -z-10 overflow-hidden">
@@ -115,117 +146,73 @@
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
               <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
-                <p>Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id.</p>
                 <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3">
-                    <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
-                    </svg>
-                    <span><strong class="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</span>
+                  <li class="flex gap-x-3 items-center">
+                    <img src="images/arrow.svg" alt="" class="object-cover h-44">
+                    <span><strong class="font-semibold text-gray-900">Maximale Effizienz</strong> Steigern Sie die Produktivität und reduzieren Sie die Kosten mit unseren intelligenten Automationslösungen.</span>
                   </li>
-                  <li class="flex gap-x-3">
-                    <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
-                    </svg>
-                    <span><strong class="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
+                  <li class="flex gap-x-3 items-center">
+                    <img src="images/product.svg" alt="" class="object-cover h-44">
+                    <span><strong class="font-semibold text-gray-900">Präzision in jedem Detail</strong> Qualität ist unser Markenzeichen - Ihre Produkte verdienen das Beste.</span>
                   </li>
-                  <li class="flex gap-x-3">
-                    <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                      <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                      <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
-                    </svg>
-                    <span><strong class="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.</span>
+                  <li class="flex gap-x-3 items-center">
+                    <img src="images/money.svg" alt="" class="object-cover h-44">
+                    <span><strong class="font-semibold text-gray-900">Schnelle Wirtschaftlichkeit</strong> Unsere individuellen Prozesse bieten Ihnen eine zügige
+                      Wirtschaftlichkeit. Das bedeutet, dass Sie Ihre Investitionen schnell wieder hereinholen und Ihre
+                      Rentabilität beschleunigen können.</span>
+                  </li>
+                  <li class="flex gap-x-3 items-center">
+                    <img src="images/versatility.svg" alt="" class="object-cover h-44">
+                    <span><strong class="font-semibold text-gray-900">Vielseitigkeit</strong> Unsere Konzepte sind anpassungsfähig und können in verschiedenen Branchen
+                      eingesetzt werden, darunter Fertigung, Logistik und mehr.</span>
                   </li>
                 </ul>
-                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
-                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-                <p class="mt-6">Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam turpis ipsum eu a sed convallis diam.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="bg-white">
+        <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+          <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+            <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Bereit für die Zukunft?</h2>
+            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Kontaktieren Sie uns noch heute, um herauszufinden, wie wir Ihre Automationsprozesse optimieren können.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+            </div>
+            <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
+              <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fill-opacity="0.7" />
+              <defs>
+                <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                  <stop stop-color="#7775D6" />
+                  <stop offset="1" stop-color="#E935C1" />
+                </radialGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
       
 <!-- END SECTION 1 -->
-<!-- SECTION 2 --> 
-<div class="bg-white py-24 sm:py-32">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
-        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to deploy your app</p>
-        <p class="mt-6 text-lg leading-8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
-      </div>
-      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-          <div class="flex flex-col">
-            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-              <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
-              </svg>
-              Push to deploy
-            </dt>
-            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-              <p class="flex-auto">Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.</p>
-              <p class="mt-6">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
-              </p>
-            </dd>
-          </div>
-          <div class="flex flex-col">
-            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-              <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
-              </svg>
-              SSL certificates
-            </dt>
-            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-              <p class="flex-auto">Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.</p>
-              <p class="mt-6">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
-              </p>
-            </dd>
-          </div>
-          <div class="flex flex-col">
-            <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-              <svg class="h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 01-9.201 2.466l-.312-.311h2.433a.75.75 0 000-1.5H3.989a.75.75 0 00-.75.75v4.242a.75.75 0 001.5 0v-2.43l.31.31a7 7 0 0011.712-3.138.75.75 0 00-1.449-.39zm1.23-3.723a.75.75 0 00.219-.53V2.929a.75.75 0 00-1.5 0V5.36l-.31-.31A7 7 0 003.239 8.188a.75.75 0 101.448.389A5.5 5.5 0 0113.89 6.11l.311.31h-2.432a.75.75 0 000 1.5h4.243a.75.75 0 00.53-.219z" clip-rule="evenodd" />
-              </svg>
-              Simple queues
-            </dt>
-            <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-              <p class="flex-auto">Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.</p>
-              <p class="mt-6">
-                <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">Learn more <span aria-hidden="true">→</span></a>
-              </p>
-            </dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-<!-- END SECTION2 -->
 
 <!-- FOOTER -->
 <footer class="bg-white">
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div class="pb-6">
-          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
-        </div>
-        <div class="pb-6">
-          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
-        </div>
-        <div class="pb-6">
-          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
-        </div>
-        <div class="pb-6">
-          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
-        </div>
-        <div class="pb-6">
-          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Accessibility</a>
-        </div>
-        <div class="pb-6">
           <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+        </div>
+        <div class="pb-6">
+          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Impressum</a>
+        </div>
+        <div class="pb-6">
+          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Contact</a>
+        </div>
+        <div class="pb-6">
+          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Datenschutz</a>
+        </div>
+        <div class="pb-6">
+          <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">AGB</a>
         </div>
       </nav>
       <div class="mt-10 flex justify-center space-x-10">
