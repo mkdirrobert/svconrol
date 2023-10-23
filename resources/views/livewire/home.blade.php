@@ -70,9 +70,7 @@
               </div>
             </div>
             <div class="hidden sm:mt-8 sm:flex sm:justify-center">
-              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Entdecken Sie die Dienstleistungen selbst. <a href="#" @click="$refs.firstSection.scrollIntoView({ behavior: 'smooth' })" class="font-semibold text-blue-600"><span class="absolute inset-0" aria-hidden="true"></span>Mehr lesen <span aria-hidden="true">&rarr;</span></a>
-              </div>
+              
             </div>
           </div>
           <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
@@ -81,7 +79,7 @@
         </div>
       </div>
       <!-- SECTION 2 --> 
-      <div x-ref="firstSection" class="bg-white sm:pb-32 pb-24">
+      <div class="bg-white sm:pb-32 pb-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
             <dl class="flex items-center justify-between">
@@ -131,17 +129,9 @@
           </svg>
         </div>
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-            <div class="lg:pr-4">
-              <div class="lg:max-w-lg">
-                <p class="text-base font-semibold leading-7 text-indigo-600">Deploy faster</p>
-                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
-                <p class="mt-6 text-xl leading-8 text-gray-700">Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas.</p>
-              </div>
-            </div>
-          </div>
+          
           <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="images/wire.webp" alt="">
+            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="images/main.png" alt="">
           </div>
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
@@ -175,9 +165,15 @@
 
       <div class="bg-white">
         <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
-          <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-            <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">Bereit für die Zukunft?</h2>
-            <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">Kontaktieren Sie uns noch heute, um herauszufinden, wie wir Ihre Automationsprozesse optimieren können.</p>
+          <div class="relative isolate overflow-hidden bg-gradient-to-r from-50-100 to text-teal-100 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+            <div class="flex items-center justify-center">
+              <img src="/images/simple-white.png" alt="" class="object-cover h-36">
+              <div>
+                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl">Bereit für die Zukunft?</h2>
+                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-800">Kontaktieren Sie uns noch heute, um herauszufinden, wie wir Ihre Automationsprozesse optimieren können.</p>
+              </div>
+            </div>
+
             <div class="mt-10 flex items-center justify-center gap-x-6">
             </div>
             <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
@@ -247,7 +243,7 @@
           </svg>
         </a>
       </div>
-      <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
+      <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2023 SVC, Inc. All rights reserved.</p>
     </div>
   </footer>
 <!-- END FOOTER -->  
