@@ -5,7 +5,7 @@
             <div class="flex lg:flex-1">
               <a href="/" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="images/logo vector.svg" alt="">
+                <img class="h-14 w-auto" src="images/logo vector.svg" alt="">
               </a>
             </div>
             <div class="flex lg:hidden">
@@ -17,12 +17,16 @@
               </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Leistungen</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Unternehmen</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">News</a>
-              <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Kontakt</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.services') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.company') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.news') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.contact') }}</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+              <span class="isolate inline-flex rounded-md shadow-sm">
+                <button wire:click="changeLocale('de')" type="button" class="relative inline-flex items-center rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">DE</button>
+                <button wire:click="changeLocale('en')" type="button" class="relative -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10">EN</button>
+              </span>
             </div>
           </nav>
           <!-- Mobile menu, show/hide based on menu open state. -->
@@ -64,8 +68,8 @@
           </div>
           <div class="mx-auto max-w-2xl py-12 sm:py-28 lg:py-40">
             <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Effiziente Automationslösungen für die Zukunft!</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-600">Unser Unternehmen steht für Innovation und Fortschritt. Mit jahrelanger Erfahrung und einem engagierten Team bieten wir maßgeschneiderte Lösungen für Ihre Automatisierungsbedürfnisse.</p>
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{ __('main-page/first-section.title') }}</h1>
+              <p class="mt-6 text-lg leading-8 text-gray-600">{{ __('main-page/first-section.subtitle') }}</p>
               <div class="mt-10 flex items-center justify-center gap-x-6">
               </div>
             </div>
@@ -82,28 +86,28 @@
       <div class="bg-white sm:pb-32 pb-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl class="flex items-center justify-between">
+            <dl class="flex items-center justify-between space-x-24">
               <div class="flex flex-col">
                 <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   <div class="flex flex-col">
-                    <img src="images/planning.svg" alt="" class="object-cover h-48">
-                    <span class="text-center text-2xl sm:mt-10">Planung</span>
+                    <img src="images/planning.svg" alt="" class="object-cover h-fit">
+                    <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.planning') }}</span>
                   </div>
                 </dt>
               </div>
               <div class="flex flex-col">
                 <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   <div class="flex flex-col">
-                    <img src="images/programming.svg" alt="" class="object-cover h-48">
-                    <span class="text-center text-2xl sm:mt-10">Programmierung</span>
+                    <img src="images/programming.svg" alt="" class="object-cover h-fit">
+                    <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.programming') }}</span>
                   </div>
                 </dt>
               </div>
               <div class="flex flex-col">
                 <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   <div class="flex flex-col">
-                    <img src="images/electric.svg" alt="" class="object-cover h-48">
-                    <span class="text-center text-2xl sm:mt-10">Schaltschrankbau</span>
+                    <img src="images/electric.svg" alt="" class="object-cover h-fit">
+                    <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.control_cabinet_construction') }}</span>
                   </div>
                 </dt>
               </div>
@@ -131,7 +135,7 @@
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           
           <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" src="images/main.png" alt="">
+            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/main.png" alt="">
           </div>
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
@@ -139,22 +143,19 @@
                 <ul role="list" class="mt-8 space-y-8 text-gray-600">
                   <li class="flex gap-x-3 items-center">
                     <img src="images/arrow.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">Maximale Effizienz</strong> Steigern Sie die Produktivität und reduzieren Sie die Kosten mit unseren intelligenten Automationslösungen.</span>
+                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.maxim_strong') }}</strong> {{ __('main-page/second-section.maxim_text') }}</span>
                   </li>
                   <li class="flex gap-x-3 items-center">
                     <img src="images/product.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">Präzision in jedem Detail</strong> Qualität ist unser Markenzeichen - Ihre Produkte verdienen das Beste.</span>
+                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.details_strong') }}</strong> {{ __('main-page/second-section.detail_text') }}</span>
                   </li>
                   <li class="flex gap-x-3 items-center">
                     <img src="images/money.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">Schnelle Wirtschaftlichkeit</strong> Unsere individuellen Prozesse bieten Ihnen eine zügige
-                      Wirtschaftlichkeit. Das bedeutet, dass Sie Ihre Investitionen schnell wieder hereinholen und Ihre
-                      Rentabilität beschleunigen können.</span>
+                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.economic_strong') }}</strong> {{ __('main-page/second-section.economic_text') }}</span>
                   </li>
                   <li class="flex gap-x-3 items-center">
                     <img src="images/versatility.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">Vielseitigkeit</strong> Unsere Konzepte sind anpassungsfähig und können in verschiedenen Branchen
-                      eingesetzt werden, darunter Fertigung, Logistik und mehr.</span>
+                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.versatility_strong') }}</strong> {{ __('main-page/second-section.versatility_text') }}</span>
                   </li>
                 </ul>
               </div>
@@ -169,8 +170,8 @@
             <div class="flex items-center justify-center">
               <img src="/images/simple-white.png" alt="" class="object-cover h-36">
               <div>
-                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl">Bereit für die Zukunft?</h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-800">Kontaktieren Sie uns noch heute, um herauszufinden, wie wir Ihre Automationsprozesse optimieren können.</p>
+                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl">{{ __('main-page/second-section.ready') }}</h2>
+                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-800">{{ __('main-page/second-section.contact_us') }}</p>
               </div>
             </div>
 
