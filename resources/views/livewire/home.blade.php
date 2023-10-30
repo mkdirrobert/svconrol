@@ -17,10 +17,10 @@
               </button>
             </div>
             <div class="hidden lg:flex lg:gap-x-12">
-              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.services') }}</a>
-              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.company') }}</a>
-              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.news') }}</a>
-              <a href="#" class="text-xl font-semibold leading-6 text-blue-specific">{{ __('main-page/nav-bar.contact') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.services') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.company') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.news') }}</a>
+              <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.contact') }}</a>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
               <span class="isolate inline-flex rounded-md shadow-sm">
@@ -86,7 +86,7 @@
       <div class="bg-white sm:pb-32 pb-24">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl class="flex items-center justify-between space-x-24">
+            <dl class="flex items-center justify-between space-x-24 pl-44 pr-44 pt-24">
               <div class="flex flex-col">
                 <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
                   <div class="flex flex-col">
