@@ -5,7 +5,7 @@ namespace App\Livewire;
 use Livewire\Component;
 use Illuminate\Support\Facades\App;
 
-class Home extends Component
+class Planning extends Component
 {
     public ?string $locale = null;
 
@@ -22,6 +22,6 @@ class Home extends Component
     
     public function render()
     {
-        return view('livewire.home');
+        return view('livewire.planning');
     }
 }

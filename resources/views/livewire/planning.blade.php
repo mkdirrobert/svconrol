@@ -68,8 +68,7 @@
           </div>
           <div class="mx-auto max-w-2xl py-12 sm:py-28 lg:py-40">
             <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{ __('main-page/first-section.title') }}</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-600">{{ __('main-page/first-section.subtitle') }}</p>
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{ __('planning-page/page.title') }}</h1>
               <div class="mt-10 flex items-center justify-center gap-x-6">
               </div>
             </div>
@@ -83,38 +82,7 @@
         </div>
       </div>
       <!-- SECTION 2 --> 
-      <div class="bg-white sm:pb-32 pb-24">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl class="flex items-center justify-between space-x-24 pl-44 pr-44 pt-24">
-              <div class="flex flex-col">
-                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <div class="flex flex-col">
-                    <img src="images/planning.svg" alt="" class="object-cover h-fit">
-                    <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.planning') }}</span>
-                  </div>
-                </dt>
-              </div>
-              <div class="flex flex-col">
-                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <div class="flex flex-col">
-                    <img src="images/programming.svg" alt="" class="object-cover h-fit">
-                    <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.programming') }}</span>
-                  </div>
-                </dt>
-              </div>
-              <div class="flex flex-col">
-                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <div class="flex flex-col">
-                    <img src="images/electric.svg" alt="" class="object-cover h-fit">
-                    <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.control_cabinet_construction') }}</span>
-                  </div>
-                </dt>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
+      
     <!-- END SECTION2 -->
 
       <!-- SECTION 1 --> 
@@ -135,27 +103,15 @@
         <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           
           <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/main.png" alt="">
+            <img class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/calendar.svg" alt="">
           </div>
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
               <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                 <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/arrow.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.maxim_strong') }}</strong> {{ __('main-page/second-section.maxim_text') }}</span>
-                  </li>
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/product.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.details_strong') }}</strong> {{ __('main-page/second-section.detail_text') }}</span>
-                  </li>
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/money.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.economic_strong') }}</strong> {{ __('main-page/second-section.economic_text') }}</span>
-                  </li>
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/versatility.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.versatility_strong') }}</strong> {{ __('main-page/second-section.versatility_text') }}</span>
+                  <li class="gap-y-3 items-center">
+                    <img src="images/motivation.svg" alt="" class="object-cover h-64">
+                    <span class="text-xl"><div class="font-semibold text-gray-900 text-4xl">{{ __('planning-page/page.first_part_photo') }}</div> <br>{{ __('planning-page/page.second_part_photo') }}< </span>
                   </li>
                 </ul>
               </div>
@@ -163,6 +119,68 @@
           </div>
         </div>
       </div>
+      
+      <div class="bg-gray-100 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <p class="mt-6 text-2xl leading-8 text-gray-800 text-center">{{ __('planning-page/page.flex_title') }}</p>
+          <div class="mx-auto max-w-2xl lg:mx-0">
+     
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              <div class="flex flex-col">
+                <dt class="text-base font-semibold leading-7 text-gray-800 ">
+                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-specific">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                      </svg>
+                      
+                  </div>
+                  {{ __('planning-page/page.macro') }}
+                </dt>
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800">
+                  <p class="flex-auto">{{ __('planning-page/page.macro_text') }}</p>
+                  <p class="mt-6">
+                  </p>
+                </dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-base font-semibold leading-7 text-gray-800">
+                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-specific">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
+                      </svg>
+                      
+                  </div>
+                  {{ __('planning-page/page.evaluations') }}
+                </dt>
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800">
+                  <p class="flex-auto">{{ __('planning-page/page.evaluations_text') }}</p>
+                  <p class="mt-6">
+                  </p>
+                </dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-base font-semibold leading-7 text-gray-800">
+                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-specific">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                      </svg>
+                      
+                  </div>
+                  {{ __('planning-page/page.management') }}
+                </dt>
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800">
+                  <p class="flex-auto">{{ __('planning-page/page.management_text') }}</p>
+                  <p class="mt-6">
+                  </p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      
 
       <div class="bg-white">
         <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -170,8 +188,7 @@
             <div class="flex items-center justify-center">
               <img src="/images/simple-white.png" alt="" class="object-cover h-36">
               <div>
-                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl">{{ __('main-page/second-section.ready') }}</h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-800">{{ __('main-page/second-section.contact_us') }}</p>
+                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl"> {{ __('planning-page/page.footer') }}</h2>
               </div>
             </div>
 
