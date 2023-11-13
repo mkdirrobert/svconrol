@@ -1,4 +1,4 @@
-<div x-data="{}">
+<div>
     <div class="bg-white">
       <header class="absolute inset-x-0 top-0 z-50">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -100,11 +100,38 @@
             <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
           </svg>
         </div>
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          
-          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/calendar.svg" alt="">
-          </div>
+        <div 
+        x-data="{
+          id: 1,
+          selected: true,
+          changePhotoUp() {
+            this.id = this.id < 3 ? this.id + 1 : 3;  
+          },
+          changePhotoDown() {
+            this.id = this.id > 1 ? this.id -1 : 1;
+          },
+        }"
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+            <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+
+              <div class="flex items-center flex-col space-y-6">
+                <svg @click="changePhotoUp()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
+                  <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+                
+                <img x-show="id === 1" class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/calendar.svg" alt="">
+                <img x-show="id === 2" class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/product.svg" alt="">
+                <img x-show="id === 3" class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/versatility.svg" alt="">
+
+                <svg @click="changePhotoDown()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
+                  <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+              </div>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+            </svg>
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
               <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
