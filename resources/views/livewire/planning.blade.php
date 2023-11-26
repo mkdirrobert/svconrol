@@ -105,23 +105,26 @@
           id: 1,
           selected: true,
           changePhotoUp() {
-            this.id = this.id < 3 ? this.id + 1 : 3;  
+            this.id = this.id < 7 ? this.id + 1 : 7;  
           },
           changePhotoDown() {
-            this.id = this.id > 1 ? this.id -1 : 1;
+            this.id = this.id > 1 ? this.id - 1 : 1;
           },
         }"
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-            <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-
-              <div class="flex items-center flex-col space-y-6">
+        <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div class="flex items-center flex-col space-y-6">
                 <svg @click="changePhotoUp()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
                   <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd" />
                 </svg>
                 
-                <img x-show="id === 1" class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/calendar.svg" alt="">
-                <img x-show="id === 2" class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/product.svg" alt="">
-                <img x-show="id === 3" class="w-[48rem] max-w-none rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/versatility.svg" alt="">
+                <img x-show="id === 1" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning1.jpg" alt="">
+                <img x-show="id === 2" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning2.jpg" alt="">
+                <img x-show="id === 3" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning3.jpg" alt="">
+                <img x-show="id === 4" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning4.jpg" alt="">
+                <img x-show="id === 5" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning5.jpg" alt="">
+                <img x-show="id === 6" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning6.jpg" alt="">
+                <img x-show="id === 7" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning7.jpg" alt="">
 
                 <svg @click="changePhotoDown()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
                   <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
@@ -138,7 +141,7 @@
                 <ul role="list" class="mt-8 space-y-8 text-gray-600">
                   <li class="gap-y-3 items-center">
                     <img src="images/motivation.svg" alt="" class="object-cover h-64">
-                    <span class="text-xl"><div class="font-semibold text-gray-900 text-4xl">{{ __('planning-page/page.first_part_photo') }}</div> <br>{{ __('planning-page/page.second_part_photo') }}< </span>
+                    <span class="text-xl"><div class="font-semibold text-gray-900 text-4xl">{{ __('planning-page/page.first_part_photo') }}</div> <br>{{ __('planning-page/page.second_part_photo') }} </span>
                   </li>
                 </ul>
               </div>
