@@ -1,5 +1,5 @@
-<div x-data="{}">
-  <div x-data="{show: false}" class="bg-white">
+<div>
+    <div x-data="{show: false}" class="bg-white">
       <header class="absolute inset-x-0 top-0 z-50">
         <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-1">
@@ -52,7 +52,6 @@
                 <div class="space-y-2 py-6">
                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Leistungen</a>
                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Unternehmen</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">News</a>
                   <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Kontakt</a>
                 </div>
                 <div class="py-6">
@@ -69,8 +68,7 @@
           </div>
           <div class="mx-auto max-w-2xl py-12 sm:py-28 lg:py-40">
             <div class="text-center">
-              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{ __('main-page/first-section.title') }}</h1>
-              <p class="mt-6 text-lg leading-8 text-gray-600">{{ __('main-page/first-section.subtitle') }}</p>
+              <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">{{ __('programming/page.title') }}</h1>
               <div class="mt-10 flex items-center justify-center gap-x-6">
               </div>
             </div>
@@ -84,44 +82,7 @@
         </div>
       </div>
       <!-- SECTION 2 --> 
-      <div class="bg-white sm:pb-32 pb-24">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto mt-16 max-w-2xl lg:max-w-none">
-            <dl class="flex items-center justify-between space-x-24 pl-44 pr-44 pt-24">
-              <div class="flex flex-col">
-                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <a href="{{ route('planning') }}">
-                    <div class="flex flex-col">
-                      <img src="images/planning.svg" alt="" class="h-[20rem] object-contain">
-                      <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.planning') }}</span>
-                    </div>
-                  </a>
-                </dt>
-              </div>
-              <div class="flex flex-col">
-                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <a href="{{ route('programming') }}">
-                    <div class="flex flex-col">
-                      <img src="images/programming.svg" alt="" class="h-[20rem] object-contain">
-                      <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.programming') }}</span>
-                    </div>
-                  </a>
-                </dt>
-              </div>
-              <div class="flex flex-col">
-                <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
-                  <a href="{{ route('construction') }}">
-                    <div class="flex flex-col">
-                      <img src="images/electric.svg" alt="" class="h-[20rem] object-contain">
-                      <span class="text-center text-2xl sm:mt-10">{{ __('main-page/first-section.control_cabinet_construction') }}</span>
-                    </div>
-                  </a>
-                </dt>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
+      
     <!-- END SECTION2 -->
 
       <!-- SECTION 1 --> 
@@ -139,30 +100,48 @@
             <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
           </svg>
         </div>
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-          
-          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-            <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[44rem]" src="images/main.png" alt="">
-          </div>
+        <div 
+        x-data="{
+          id: 1,
+          selected: true,
+          changePhotoUp() {
+            this.id = this.id < 7 ? this.id + 1 : 7;  
+          },
+          changePhotoDown() {
+            this.id = this.id > 1 ? this.id - 1 : 1;
+          },
+        }"
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div class="flex items-center flex-col space-y-6">
+                <svg @click="changePhotoUp()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
+                  <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd" />
+                </svg>
+                
+                <img x-show="id === 1" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning1.jpg" alt="">
+                <img x-show="id === 2" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning2.jpg" alt="">
+                <img x-show="id === 3" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning3.jpg" alt="">
+                <img x-show="id === 4" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning4.jpg" alt="">
+                <img x-show="id === 5" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning5.jpg" alt="">
+                <img x-show="id === 6" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning6.jpg" alt="">
+                <img x-show="id === 7" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning7.jpg" alt="">
+
+                <svg @click="changePhotoDown()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
+                  <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                </svg>
+              </div>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+            </svg>
           <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div class="lg:pr-4">
               <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
                 <ul role="list" class="mt-8 space-y-8 text-gray-600">
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/arrow.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.maxim_strong') }}</strong> {{ __('main-page/second-section.maxim_text') }}</span>
-                  </li>
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/product.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.details_strong') }}</strong> {{ __('main-page/second-section.detail_text') }}</span>
-                  </li>
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/money.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.economic_strong') }}</strong> {{ __('main-page/second-section.economic_text') }}</span>
-                  </li>
-                  <li class="flex gap-x-3 items-center">
-                    <img src="images/versatility.svg" alt="" class="object-cover h-44">
-                    <span><strong class="font-semibold text-gray-900">{{ __('main-page/second-section.versatility_strong') }}</strong> {{ __('main-page/second-section.versatility_text') }}</span>
+                  <li class="gap-y-3 items-center">
+                    <img src="images/programming-svg.svg" alt="" class="object-cover h-96">
+                    <span class="text-xl"><div class="font-semibold text-gray-900 text-4xl">{{ __('programming/page.first_part_photo') }}</div> <br>{{ __('programming/page.second_part_photo') }} </span>
                   </li>
                 </ul>
               </div>
@@ -170,6 +149,64 @@
           </div>
         </div>
       </div>
+      
+      <div class="bg-gray-100 py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <p class="mt-6 text-2xl leading-8 text-gray-800 text-center">{{ __('programming/page.flex_title') }}</p>
+          <div class="mx-auto max-w-2xl lg:mx-0">
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
+              <div class="flex flex-col">
+                <dt class="text-base font-semibold leading-7 text-gray-800 ">
+                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-specific">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                      </svg>
+                  </div>
+                  {{ __('programming/page.bibliotech') }}
+                </dt>
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800">
+                  <p class="flex-auto">{{ __('programming/page.text_bibliotech') }}</p>
+                  <p class="mt-6">
+                  </p>
+                </dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-base font-semibold leading-7 text-gray-800">
+                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-specific">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                      </svg>
+                  </div>
+                  {{ __('programming/page.hmi') }}
+                </dt>
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800">
+                  <p class="flex-auto">{{ __('programming/page.text_hmi') }}</p>
+                  <p class="mt-6">
+                  </p>
+                </dd>
+              </div>
+              <div class="flex flex-col">
+                <dt class="text-base font-semibold leading-7 text-gray-800">
+                  <div class="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-specific">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z" />
+                      </svg>                      
+                  </div>
+                  {{ __('programming/page.system') }}
+                </dt>
+                <dd class="mt-1 flex flex-auto flex-col text-base leading-7 text-gray-800">
+                  <p class="flex-auto">{{ __('programming/page.text_system') }}</p>
+                  <p class="mt-6">
+                  </p>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+      
 
       <div class="bg-white">
         <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
@@ -177,8 +214,7 @@
             <div class="flex items-center justify-center">
               <img src="/images/simple-white.png" alt="" class="object-cover h-36">
               <div>
-                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-4xl">{{ __('main-page/second-section.ready') }}</h2>
-                <p class="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-800">{{ __('main-page/second-section.contact_us') }}</p>
+                <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-blue-900 sm:text-2xl"> {{ __('programming/page.footer') }}</h2>
               </div>
             </div>
 

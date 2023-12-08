@@ -19,7 +19,12 @@ Route::get('/', function () {
 
 Route::get('/planning', function () {
     return view('planning');
-});
+})->name('planning');
+
 Route::get('/construct', function () {
     return view('construction');
-});
+})->name('construction');
+
+Route::get('/programming', function () {
+    return view('programming');
+})->name('programming');
