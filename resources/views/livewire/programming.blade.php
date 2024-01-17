@@ -105,7 +105,7 @@
           id: 1,
           selected: true,
           changePhotoUp() {
-            this.id = this.id < 7 ? this.id + 1 : 7;  
+            this.id = this.id < 4 ? this.id + 1 : 4;  
           },
           changePhotoDown() {
             this.id = this.id > 1 ? this.id - 1 : 1;
@@ -118,13 +118,10 @@
                   <path fill-rule="evenodd" d="M11.47 7.72a.75.75 0 011.06 0l7.5 7.5a.75.75 0 11-1.06 1.06L12 9.31l-6.97 6.97a.75.75 0 01-1.06-1.06l7.5-7.5z" clip-rule="evenodd" />
                 </svg>
                 
-                <img x-show="id === 1" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning1.jpg" alt="">
-                <img x-show="id === 2" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning2.jpg" alt="">
-                <img x-show="id === 3" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning3.jpg" alt="">
-                <img x-show="id === 4" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning4.jpg" alt="">
-                <img x-show="id === 5" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning5.jpg" alt="">
-                <img x-show="id === 6" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning6.jpg" alt="">
-                <img x-show="id === 7" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/planning/planning7.jpg" alt="">
+                <img x-show="id === 1" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/programming/programing1.png" alt="">
+                <img x-show="id === 2" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/programming/programing2.png" alt="">
+                <img x-show="id === 3" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/programming/programing3.png" alt="">
+                <img x-show="id === 4" class=" h-[27rem] object-contain rounded-xl bg-gray-200 shadow-xl ring-1 ring-gray-400/10" src="images/programming/programing4.png" alt="">
 
                 <svg @click="changePhotoDown()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 hover:cursor-pointer">
                   <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
