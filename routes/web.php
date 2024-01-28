@@ -28,3 +28,11 @@ Route::get('/construct', function () {
 Route::get('/programming', function () {
     return view('programming');
 })->name('programming');
+
+Route::get('/company', function () {
+    return view('company');
+})->name('company');
+
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');

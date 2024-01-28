@@ -18,8 +18,8 @@
           </div>
           <div class="hidden lg:flex lg:gap-x-12">
             <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.services') }}</a>
-            <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.company') }}</a>
-            <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.contact') }}</a>
+            <a href="{{ route('company') }}" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.company') }}</a>
+            <a href="{{ route('contact') }}" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.contact') }}</a>
           </div>
           <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <span class="isolate inline-flex rounded-md shadow-sm">
