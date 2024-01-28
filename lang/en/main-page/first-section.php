@@ -6,4 +6,7 @@ return [
     'planning' => 'Planning',
     'programming' => 'Programming',
     'control_cabinet_construction' => 'Control Cabinet Construction',
+    'nav_control' => 'Power up with our panels',
+    'nav_programming' => 'Code, Create, Solve, Innovate, Develop',
+    'nav_planning' => 'Plan your path to success',
 ];

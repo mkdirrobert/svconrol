@@ -3,7 +3,7 @@
 return [
 
     'title' => 'Unternehmen',
-    'first_title' => 'Willkommen bei SVC',
+    'first_title' => 'Willkommen bei SVControl',
     'first_content' => 'Als frisch gegründetes Unternehmen in der Automatisierungstechnik stehen wir, SVC, für innovative Lösungen in der SPS-Programmierung, professionelle Elektrokonstruktion und maßgeschneiderten Schaltschrankbau.',
     'first_content2' => 'Wir sind ein junges und dynamisches Team, überzeugt von der Vision, die Grenzen der Automatisierungstechnik zu erweitern.',
     'second_title' => 'Unsere Mission',

@@ -2,7 +2,7 @@
 
 return [
     'title' => 'Company',
-    'first_title' => 'Welcome to SVC',
+    'first_title' => 'Welcome to SVControl',
     'first_content' => 'As a newly founded company in automation technology, we, SVC, stand for innovative solutions in PLC programming, professional electrical design, and customized control cabinet construction.', 
     'first_content2' => 'We are a young and dynamic team, convinced of the vision to expand the boundaries of automation technology.',
     'second_title' => 'Our Mission',
