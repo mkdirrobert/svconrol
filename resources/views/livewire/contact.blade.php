@@ -15,10 +15,54 @@
             </svg>
             </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.services') }}</a>
-            <a href="{{ route('company') }}" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.company') }}</a>
-            <a href="{{ route('contact') }}" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.contact') }}</a>
+        <div class="hidden lg:flex space-x-12" x-data="{showMenu: false}">
+          <a href="#" @mouseover="showMenu = !showMenu" class="text-xl font-semibold leading-6 text-gray-800">
+            {{ __('main-page/nav-bar.services') }}
+                <div x-show="showMenu" @mouseleave="showMenu = false" class="absolute left-1/2 z-10 mt-12 flex w-screen max-w-max -translate-x-96 px-4">
+                  <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
+                    <div class="p-4">
+                      <div class="hidden group relative gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                        <div>
+                          <a href="{{ route('construction') }}" class="font-semibold text-gray-900">
+                            {{ __('main-page/first-section.control_cabinet_construction') }}
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">{{ __('main-page/first-section.nav_control') }}</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                        <div>
+                          <a href="{{ route('construction') }}" class="font-semibold text-gray-900">
+                            {{ __('main-page/first-section.control_cabinet_construction') }}
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">{{ __('main-page/first-section.nav_control') }}</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                        <div>
+                          <a href="{{ route('programming') }}" class="font-semibold text-gray-900">
+                            {{ __('main-page/first-section.programming') }}
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">{{ __('main-page/first-section.nav_programming') }}</p>
+                        </div>
+                      </div>
+                      <div class="group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50">
+                        <div>
+                          <a href="{{ route('planning') }}" class="font-semibold text-gray-900">
+                            {{ __('main-page/first-section.planning') }}
+                            <span class="absolute inset-0"></span>
+                          </a>
+                          <p class="mt-1 text-gray-600">{{ __('main-page/first-section.nav_planning') }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </a>
+          <a href="{{ route('company') }}" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.company') }}</a>
+          <a href="{{ route('contact') }}" class="text-xl font-semibold leading-6 text-gray-800">{{ __('main-page/nav-bar.contact') }}</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
             <span class="isolate inline-flex rounded-md shadow-sm">
