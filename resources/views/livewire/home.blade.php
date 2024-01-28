@@ -19,7 +19,7 @@
           <div class="hidden lg:flex space-x-12" x-data="{showMenu: false}">
             <a href="#" @mouseover="showMenu = !showMenu" class="text-xl font-semibold leading-6 text-gray-800">
               {{ __('main-page/nav-bar.services') }}
-                  <div x-show="showMenu"  class="absolute left-1/2 z-10 mt-12 flex w-screen max-w-max -translate-x-96 px-4">
+                  <div x-show="showMenu" @mouseleave="showMenu = false" class="absolute left-1/2 z-10 mt-12 flex w-screen max-w-max -translate-x-96 px-4">
                     <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5">
                       <div class="p-4">
                         <div class="hidden group relative gap-x-6 rounded-lg p-4 hover:bg-gray-50">
