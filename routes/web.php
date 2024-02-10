@@ -36,3 +36,7 @@ Route::get('/company', function () {
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::get('/agb', function () {
+    return view('agb');
+})->name('agb');
