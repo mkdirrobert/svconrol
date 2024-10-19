@@ -209,7 +209,7 @@
                                         <img class="aspect-[3/3] w-full rounded-2xl object-cover"
                                             src="photos/silviu.jpg" alt="silviu-photo">
                                         <h3 class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                                            Florian Haliti</h3>
+                                            Viktor Berisha</h3>
                                     </li>
                                 </ul>
                             </div>
