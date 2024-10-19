@@ -1,7 +1,7 @@
 <?php 
 
 return [
-    'title' => 'Planung',
+    'title' => 'E-Konstruktion',
     'first_part_photo' => 'Ihre Aufgaben sind unsere Motivation.',
     'second_part_photo' => 'Fachleute analysieren sorgfältig Ihren Bedarf, entwerfen ein Konzept und erarbeiten
     technische Lösungen auf höchstem Niveau. Jeder Kunde hat spezifische Anforderungen an
